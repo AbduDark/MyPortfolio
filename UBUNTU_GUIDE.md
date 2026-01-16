@@ -33,7 +33,7 @@ sudo nano /etc/nginx/sites-available/portfolio
 ```nginx
 server {
     listen 80;
-    server_name _;  # أو اكتب الدومين بتاعك هنا لو عندك واحد
+    server_name abdulrahman.ddns.net;
 
     root /var/www/portfolio;
     index index.html;
@@ -62,7 +62,28 @@ sudo systemctl restart nginx
 
 ---
 
-## 3. ربط GitHub بالسيرفر (SSH Keys)
+## 3. تفعيل HTTPS (القفل الأخضر 🔒)
+هنستخدم **Certbot** عشان نركب شهادة SSL مجانية وتجدد نفسها تلقائيًا.
+
+1. تثبيت Certbot:
+```bash
+sudo apt install certbot python3-certbot-nginx -y
+```
+
+2. استخراج الشهادة وتعديل Nginx تلقائيًا:
+```bash
+sudo certbot --nginx -d abdulrahman.ddns.net
+```
+*هيطلب منك إيميل للتنبيهات، وموافقة على الشروط (اكتب `Y`)*.
+
+3. التأكد من التجديد التلقائي:
+```bash
+sudo systemctl status certbot.timer
+```
+
+---
+
+## 4. ربط GitHub بالسيرفر (SSH Keys)
 عشان GitHub يقدر يدخل السيرفر ويرفع الملفات بأمان، لازم نستخدم SSH Key.
 
 **على جهازك الشخصي (أو السيرفر، مش هتفرق، بس الأفضل إنشاء مفتاح جديد):**
@@ -84,7 +105,7 @@ nano ~/.ssh/authorized_keys
 
 ---
 
-## 4. إعداد GitHub Secrets
+## 5. إعداد GitHub Secrets
 دلوقتي روح لصفحة المشروع على **GitHub**:
 1. افتح **Settings** > **Secrets and variables** > **Actions**.
 2. اضغط **New repository secret**.
