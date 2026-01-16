@@ -1,0 +1,157 @@
+.projects {
+    background: var(--bg-primary);
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+@media (max-width: 968px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.project-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.project-card:hover {
+    border-color: var(--accent-primary);
+    box-shadow:
+        0 30px 60px rgba(0, 0, 0, 0.4),
+        0 0 100px rgba(239, 68, 68, 0.1);
+}
+
+.project-image {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, var(--bg-tertiary) 0%, var(--bg-secondary) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.project-icon {
+    font-size: 4rem;
+    color: var(--accent-primary);
+    opacity: 0.3;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+    opacity: 0.15;
+    transform: scale(1.1);
+}
+
+.project-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-link {
+    width: 56px;
+    height: 56px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+    transition: all 0.3s ease;
+    transform: translateY(20px);
+}
+
+.project-card:hover .project-link {
+    transform: translateY(0);
+}
+
+.project-link:hover {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    color: var(--bg-primary);
+}
+
+.project-content {
+    padding: 28px;
+}
+
+.project-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.project-card:hover .project-content h3 {
+    color: var(--accent-primary);
+}
+
+.project-content>p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.project-problem {
+    background: var(--bg-tertiary);
+    padding: 14px 18px;
+    border-radius: var(--radius-sm);
+    margin-bottom: 16px;
+    font-size: 0.9rem;
+    border-left: 3px solid var(--accent-primary);
+}
+
+html[dir="rtl"] .project-problem {
+    border-left: none;
+    border-right: 3px solid var(--accent-primary);
+}
+
+.project-problem strong {
+    color: var(--accent-primary);
+}
+
+.project-problem span {
+    color: var(--text-secondary);
+}
+
+.project-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.project-stack span {
+    padding: 6px 14px;
+    background: rgba(239, 68, 68, 0.1);
+    border: 1px solid rgba(239, 68, 68, 0.2);
+    border-radius: 50px;
+    font-size: 0.8rem;
+    color: var(--accent-primary);
+    transition: all 0.3s ease;
+}
+
+.project-stack span:hover {
+    background: rgba(239, 68, 68, 0.2);
+}
