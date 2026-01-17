@@ -40,7 +40,7 @@
     overflow: hidden;
     box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.4),
-        0 10px 30px rgba(0, 212, 255, 0.2);
+        0 10px 30px rgba(255, 215, 0, 0.2);
     border: 1px solid var(--border-color);
 }
 
@@ -63,9 +63,9 @@
     inset: 0;
     border-radius: var(--radius-lg);
     background: linear-gradient(135deg,
-            rgba(0, 212, 255, 0.1) 0%,
+            rgba(255, 215, 0, 0.1) 0%,
             transparent 50%,
-            rgba(0, 212, 255, 0.1) 100%);
+            rgba(255, 215, 0, 0.1) 100%);
     pointer-events: none;
 }
 
@@ -166,7 +166,7 @@
 
 .stat-item:hover {
     border-color: var(--accent-primary);
-    box-shadow: 0 10px 40px rgba(0, 212, 255, 0.15);
+    box-shadow: 0 10px 40px rgba(255, 215, 0, 0.15);
 }
 
 .stat-icon {

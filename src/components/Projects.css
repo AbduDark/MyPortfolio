@@ -27,7 +27,7 @@
     border-color: var(--accent-primary);
     box-shadow:
         0 20px 40px rgba(0, 0, 0, 0.4),
-        0 0 100px rgba(0, 212, 255, 0.1);
+        0 0 100px rgba(255, 215, 0, 0.1);
 }
 
 .project-image {
@@ -112,13 +112,13 @@
     font-size: 0.85rem;
     padding: 6px 12px;
     border-radius: 20px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
     color: var(--text-primary);
 }
 
 .project-card:hover .tag {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(255, 215, 0, 0.2);
     border-left: none;
     border-right: 3px solid var(--accent-primary);
 }
@@ -139,8 +139,8 @@
 
 .project-stack span {
     padding: 6px 14px;
-    background: rgba(0, 212, 255, 0.1);
-    border: 1px solid rgba(0, 212, 255, 0.2);
+    background: rgba(255, 215, 0, 0.1);
+    border: 1px solid rgba(255, 215, 0, 0.2);
     border-radius: 50px;
     font-size: 0.8rem;
     color: var(--accent-primary);
@@ -148,5 +148,5 @@
 }
 
 .project-stack span:hover {
-    background: rgba(0, 212, 255, 0.2);
+    background: rgba(255, 215, 0, 0.2);
 }

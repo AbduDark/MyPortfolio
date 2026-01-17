@@ -62,7 +62,7 @@ html[dir="rtl"] .timeline-marker {
     background: var(--accent-gradient);
     border-radius: 50%;
     z-index: 2;
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
 .marker-pulse {
@@ -98,7 +98,7 @@ html[dir="rtl"] .timeline-marker {
 .timeline-item:hover .timeline-content {
     transform: translateY(-5px);
     border-color: var(--accent-primary);
-    box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
 .timeline-header {
@@ -124,14 +124,14 @@ html[dir="rtl"] .timeline-marker {
 .timeline-tag {
     display: inline-block;
     padding: 6px 16px;
-    background: rgba(0, 212, 255, 0.15);
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     color: var(--accent-primary);
 }
 
 .timeline-badge.primary {
-    background: rgba(0, 212, 255, 0.15);
-    border: 1px solid rgba(0, 212, 255, 0.3);
+    background: rgba(255, 215, 0, 0.15);
+    border: 1px solid rgba(255, 215, 0, 0.3);
     color: var(--accent-primary);
 }
 

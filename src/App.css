@@ -16,12 +16,12 @@
   --text-secondary: #a3a3a3;
   --text-muted: #737373;
 
-  --accent-primary: #00d4ff;
-  --accent-secondary: #00a3cc;
-  --accent-tertiary: #007399;
-  --accent-gradient: linear-gradient(135deg, #00d4ff 0%, #00a3cc 50%, #007399 100%);
-  --accent-glow: rgba(0, 212, 255, 0.15);
-  --accent-glow-strong: rgba(0, 212, 255, 0.3);
+  --accent-primary: #ffd700;
+  --accent-secondary: #ffb700;
+  --accent-tertiary: #b8860b;
+  --accent-gradient: linear-gradient(135deg, #ffd700 0%, #ffb700 50%, #b8860b 100%);
+  --accent-glow: rgba(255, 215, 0, 0.15);
+  --accent-glow-strong: rgba(255, 215, 0, 0.3);
 
   --border-color: rgba(255, 255, 255, 0.06);
   --border-hover: rgba(255, 255, 255, 0.12);
@@ -166,15 +166,15 @@ img {
   background: var(--accent-gradient);
   color: var(--bg-primary);
   box-shadow:
-    0 4px 20px rgba(0, 212, 255, 0.3),
-    0 0 40px rgba(0, 212, 255, 0.1);
+    0 4px 20px rgba(255, 215, 0, 0.3),
+    0 0 40px rgba(255, 215, 0, 0.1);
 }
 
 .btn-primary:hover {
   transform: translateY(-3px);
   box-shadow:
-    0 8px 30px rgba(0, 212, 255, 0.4),
-    0 0 60px rgba(0, 212, 255, 0.2);
+    0 8px 30px rgba(255, 215, 0, 0.4),
+    0 0 60px rgba(255, 215, 0, 0.2);
 }
 
 .btn-secondary {
@@ -187,7 +187,7 @@ img {
 .btn-secondary:hover {
   background: var(--glass-bg);
   border-color: var(--accent-primary);
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.1);
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.1);
 }
 
 /* Loader */
@@ -222,11 +222,11 @@ img {
 
 /* Glow Effects */
 .glow-text {
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+  text-shadow: 0 0 20px rgba(255, 215, 0, 0.5);
 }
 
 .glow-box {
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 30px rgba(255, 215, 0, 0.2);
 }
 
 /* Glass Card */
