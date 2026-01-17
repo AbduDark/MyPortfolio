@@ -39,8 +39,9 @@
     border-radius: var(--radius-lg);
     overflow: hidden;
     box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.5),
-        0 10px 30px rgba(239, 68, 68, 0.2);
+        0 20px 40px rgba(0, 0, 0, 0.4),
+        0 10px 30px rgba(156, 163, 175, 0.2);
+    border: 1px solid var(--border-color);
 }
 
 .profile-image {
@@ -62,9 +63,9 @@
     inset: 0;
     border-radius: var(--radius-lg);
     background: linear-gradient(135deg,
-            rgba(239, 68, 68, 0.1) 0%,
+            rgba(156, 163, 175, 0.1) 0%,
             transparent 50%,
-            rgba(220, 38, 38, 0.1) 100%);
+            rgba(156, 163, 175, 0.1) 100%);
     pointer-events: none;
 }
 
@@ -165,7 +166,7 @@
 
 .stat-item:hover {
     border-color: var(--accent-primary);
-    box-shadow: 0 10px 40px rgba(239, 68, 68, 0.15);
+    box-shadow: 0 10px 40px rgba(156, 163, 175, 0.15);
 }
 
 .stat-icon {

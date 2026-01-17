@@ -29,7 +29,7 @@
     font-weight: 800;
     color: var(--text-primary);
     letter-spacing: -0.5px;
-    text-shadow: 0 0 20px rgba(239, 68, 68, 0.3);
+    text-shadow: 0 0 20px rgba(156, 163, 175, 0.3);
 }
 
 .logo-bracket {
@@ -68,7 +68,7 @@ html[dir="rtl"] .nav-link::after {
 
 .nav-link:hover {
     color: var(--text-primary);
-    text-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+    text-shadow: 0 0 10px rgba(156, 163, 175, 0.5);
 }
 
 .nav-link:hover::after {
@@ -98,7 +98,7 @@ html[dir="rtl"] .nav-link::after {
 .lang-toggle:hover {
     border-color: var(--accent-primary);
     color: var(--accent-primary);
-    box-shadow: 0 0 20px rgba(239, 68, 68, 0.2);
+    box-shadow: 0 0 20px rgba(156, 163, 175, 0.2);
 }
 
 .mobile-toggle {
